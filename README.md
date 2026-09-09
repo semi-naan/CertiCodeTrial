@@ -4,33 +4,6 @@ React + Tailwind CSS rebuild that keeps the visual style of the design reference
 with content rewritten around the real company: **CertiCode**, a remote-first tech company
 running IT solutions + internship/trainee programs.
 
-## ⚠️ Important note on content sourcing
-
-`certicode.net` itself never returned readable content when I fetched it — every attempt came
-back as an empty page shell (just a `<title>` tag), which usually means it's a JS-rendered app
-my tools can't execute, or there's a DNS/routing issue. There's also no cached or indexed copy
-of the live site anywhere I could find.
-
-So this isn't copied from certicode.net's actual page text — it **can't be**, since I have no
-way to read it. Instead, `src/content.js` is built from real, verifiable facts about the company
-found through job listings and company profiles (Indeed, JobStreet):
-
-- **Real, sourced facts** (used directly): CertiCode is remote-first, focused on IT solutions and
-  professional development/internships; founded and led by Tom Oliver Chua; targets students and
-  early-career professionals; currently has internship tracks in IT Support, UI/UX Design,
-  Business Analyst, HR, Talent Acquisition, and Digital Marketing — all remote, with flexible
-  scheduling.
-- **Marked "PLACEHOLDER" in the file**: the testimonial quote, the blog post topics, and the
-  third About-section stat. No real testimonials, blog content, or those specific numbers exist
-  in what I could find — these are original filler content shaped to fit the design, not
-  copied from anywhere, and are clearly labeled so you know exactly what to replace.
-
-**If you can get me the real certicode.net copy** — a saved HTML page, a PDF export, screenshots
-of each page, or just pasted text — I can drop the real copy straight into `content.js` and this
-gap goes away entirely. That's still the most reliable way to get this 100% accurate.
-
-All images are placeholders from picsum.photos — replace with real team/office photography.
-
 ## Setup
 
 ```bash
