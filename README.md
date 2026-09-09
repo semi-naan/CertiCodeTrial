@@ -33,26 +33,3 @@ src/
     Newsletter.jsx         (dark CTA banner with email capture — "new openings" signup)
     Footer.jsx
 ```
-
-## What's functional vs. needs wiring
-
-- **Category tabs** (Open Roles table) and **program carousel arrows** are wired with local
-  React state.
-- **Newsletter forms** (banner + footer) capture email and show a confirmation state, but don't
-  call any API yet — wire `onSubmit` in `Newsletter.jsx` / `Footer.jsx` to your email provider
-  (Mailchimp, a Google Form, your own backend, etc.).
-- **"Apply Now" buttons** are static — wire to your actual application form or ATS link per role.
-- **Nav links, footer links, and blog post links** currently point to in-page anchors (`#programs`,
-  `#openings`, etc.) or `#` placeholders — replace with real routes once you have certicode.net's
-  actual site structure, or tell me what pages should exist and I'll wire real routes with
-  React Router.
-
-## Responsiveness
-
-Built mobile-first with Tailwind breakpoints (`sm:`, `md:`); layout collapses cleanly for nav,
-hero rows, stat columns, program/blog grids, and the roles table down to narrow mobile widths.
-
-## Accessibility
-
-Visible focus rings, `aria-label`s on icon-only buttons, `prefers-reduced-motion` respected, form
-inputs have associated (visually-hidden where needed) labels.
