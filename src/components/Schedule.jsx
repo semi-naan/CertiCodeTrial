@@ -40,21 +40,6 @@ export default function Schedule({ onOpenApply, activeCategory, setActiveCategor
       <div className="relative max-w-4xl mx-auto px-5 sm:px-8 mt-12">
         <div className="bg-[#121216]/90 border border-white/10 backdrop-blur-lg rounded-3xl p-5 sm:p-8 shadow-2xl">
           {/* Category Tabs */}
-          <div className="flex justify-start sm:justify-center gap-2 mb-8 overflow-x-auto no-scrollbar pb-2">
-            {scheduleSection.days.map((d) => (
-              <button
-                key={d}
-                onClick={() => handleTabClick(d)}
-                className={`shrink-0 text-xs font-semibold rounded-full px-5 py-2.5 transition-all ${
-                  currentCategory === d
-                    ? 'bg-brandOrange text-white shadow-lg shadow-brandOrange/30 scale-105'
-                    : 'bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/5'
-                }`}
-              >
-                {d === 'All' ? 'All Roles' : `${d} Track`}
-              </button>
-            ))}
-          </div>
 
           {/* Roles List */}
           <ul className="divide-y divide-white/10">

@@ -113,8 +113,6 @@ export const scheduleSection = {
   headlinePlain: 'Find A Track That',
   headlineItalic: 'Fits Your Goals',
   sub: 'Six internship tracks, each one designed to build real, job-ready experience without needing to relocate.',
-  days: ['All', 'IT', 'Design', 'Business', 'HR', 'Talent', 'Marketing'],
-  activeDay: 'All',
   bookLabel: 'Apply Now',
   classes: [
     { category: 'IT', name: 'IT Support Specialist', style: 'Intern', note: 'Operations, system monitoring, and applicant support work.', duration: 'Remote', price: 'Flextime', img: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=200&q=80' },

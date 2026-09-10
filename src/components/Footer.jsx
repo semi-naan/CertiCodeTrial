@@ -37,18 +37,6 @@ export default function Footer({ onOpenApply }) {
               </span>
             </a>
             <p className="mt-4 text-xs text-slate-400 leading-relaxed max-w-[240px]">{f.tagline}</p>
-            <div className="mt-6 flex gap-3">
-              {f.socials.map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  aria-label={s}
-                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-slate-300 hover:text-brandOrange hover:border-brandOrange transition-colors"
-                >
-                  {s[0]}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Nav Links Columns */}
